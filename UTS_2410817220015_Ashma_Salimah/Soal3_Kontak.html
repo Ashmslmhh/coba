@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title> Kontak </title>
+        <script type="text/javascript">
+            function simpanData() {
+                alert(
+                    "Data Anda telah tersimpan.\nTerima kasih atas komentar yang diberikan."
+                );
+            }
+
+            function batal() {
+                window.location.href = "menu.html";
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+        <table border="3" align="center">
+            <tr bgcolor="darkseagreen">
+                <td width="300" height="120" align="center">
+                    <font face="courier"> <b><h1> Hubungi Saya </h1></b></font>
+                </td>
+            </tr>
+
+            <tr height="350" bgcolor="papayawhip">
+                <td valign="top">
+                <table>
+                    <font face="courier"> <b><h2> Data Diri </h2></b> </font>
+                <form>
+                    <tr>
+                        <td>Nama</td> 
+                        <td><input type="text" name="nama"></td> 
+                    </tr>
+                    <tr>
+                        <td>NIM</td>
+                        <td><input type="number" name="nim" value="" maxlength="12"></td> 
+                    </tr>
+                    <tr>
+                        <td>E-mail</td>
+                        <td><input type="email" name="E-mail"></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td><input type="text" name="Tanggal Lahir" value="hh/bb/tttt"> </td>
+                    </tr>
+                    <tr valign="top">
+                        <td>Jenis Kelamin</td>
+                        <td>
+                            <input type="radio" name="jenis_kelamin" value="L"> Laki-laki <br>    
+                            <input type="radio" name="jenis_kelamin" value="P"> Perempuan </td>
+                    </tr>
+                </td>
+                </form>
+                </table>
+            </tr>
+
+            <tr bgcolor="darkseagreen">
+                <td style="padding: 5px;">
+                    Komentar Anda
+                    <textarea name="komentar" cols="77" rows="5" style="margin-bottom: 6" ></textarea>
+                    <br>
+                    <button type="reset" value="Reset">Reset </button>
+                    <button type="submit" value="Submit">Submit</button>
+                    <button type="button" value="Cancel" > <a href="Soal1_Beranda.html" >Cancel</a>  </button>
+                      <style>
+                          a:link
+                          {
+                          color: #000000;
+                          background-color: transparent;
+                          text-decoration: none;
+                          }
+                          a:visited {
+                            color:#000000;
+                            background-color:transparent;
+                            text-decoration:none;
+                            } </style>
+                    </td>
+            </tr> </form>
+        </table>
+    </body>
+</html>
